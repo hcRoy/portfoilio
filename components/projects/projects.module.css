@@ -1,0 +1,29 @@
+.projects {
+  padding: 2rem;
+  background-color: white;
+  margin-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.projects h1 {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.flex img {
+  border-radius: 10px;
+}
+
+.card {
+  margin-left: 6.4rem;
+  display: flex;
+  justify-content: center;
+}

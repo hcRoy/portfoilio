@@ -1,0 +1,16 @@
+.latest {
+  background-color: var(--color-grey-100);
+}
+
+.latest h1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: var(--color-grey-700);
+  padding: 2rem 0 1rem 0;
+}
+
+.grid {
+  margin: 2rem;
+  padding-bottom: 6.4rem;
+}

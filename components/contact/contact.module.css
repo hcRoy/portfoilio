@@ -1,0 +1,60 @@
+.contact {
+  background-color: white;
+  margin-top: 6rem;
+  padding-top: 2rem;
+  /* padding-bottom: 6rem; */
+}
+
+.contact h1 {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.flex {
+  margin: 0 auto;
+  color: white;
+  padding: 2rem;
+  width: 75%;
+  border-radius: 10px;
+  background-color: #000049;
+  border: 1px solid #000;
+  display: flex;
+  gap: 3.6rem;
+  justify-content: space-evenly;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.icons {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.6rem;
+}
+
+.form {
+  background-color: white;
+  color: black;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.formdata {
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+}
+
+.footer {
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
