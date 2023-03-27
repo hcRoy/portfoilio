@@ -16,12 +16,12 @@ export default function AboutMe() {
       </div>
       <div>
         <div className={classes.title}>
-          <p style={{ lineHeight: "3rem" }}>
+          <span style={{ lineHeight: "3rem" }}>
             {userData.about.title}. Currently working on{" "}
             <a href={userData.about.currentProjectUrl}>
               {userData.about.currentProject} 🎥
             </a>
-          </p>
+          </span>
         </div>
       </div>
       <div>

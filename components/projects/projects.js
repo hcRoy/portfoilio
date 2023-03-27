@@ -12,21 +12,11 @@ import Link from "next/link";
 
 export default function BasicCard() {
   return (
-    <Box
-      component="ul"
-      sx={{ display: "flex", gap: 6, flexWrap: "wrap", p: 0, m: 0 }}
-    >
-      {userData.projects.map((data) => (
-        <div className={classes.flex}>
+    <Box className={classes.grid} component="ul">
+      {userData.projects.map((data, i) => (
+        <div className={classes.flex} key={i}>
           <Link href={data.link}>
-            <Card
-              component="li"
-              sx={{
-                minWidth: 600,
-                flexGrow: 1,
-                minHeight: 300,
-              }}
-            >
+            <Card component="li" className={classes.card}>
               <CardCover>
                 <img
                   src={data.imgUrl}
@@ -61,7 +51,7 @@ export default function BasicCard() {
             </Card>
           </Link>
 
-          <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
+          <Card component="li" className={classes.cards}>
             <CardCover>
               <video autoPlay loop muted poster={data.imgUrl}>
                 <source src={data.video} type="video/mp4" />

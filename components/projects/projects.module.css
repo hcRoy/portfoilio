@@ -5,6 +5,35 @@
   padding-bottom: 8rem;
 }
 
+/* sx={{ display: "flex", gap: 6, flexWrap: "wrap", p: 0, m: 0 }} */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* sx={{
+  minWidth: 500,
+  flexGrow: 1,
+  minHeight: 300,
+}} */
+
+.card {
+  min-width: 500px;
+  min-height: 300px;
+  flex-grow: 1;
+}
+
+.cards {
+  min-width: 500px;
+  min-height: 300px;
+  flex-grow: 1;
+}
+
 .projects h1 {
   display: flex;
   font-size: 3rem;
@@ -12,6 +41,7 @@
 }
 
 .flex {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -23,7 +53,35 @@
 }
 
 .card {
-  margin-left: 6.4rem;
+  /* padding-left: 6.4rem; */
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1100px) {
+  .card,
+  .cards {
+    min-height: 250px;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .flex {
+    grid-template-columns: 1fr;
+  }
+  .card,
+  .cards {
+    min-height: 300px;
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 560px) {
+  .card,
+  .cards {
+    min-height: 250px;
+    min-width: 400px;
+  }
 }

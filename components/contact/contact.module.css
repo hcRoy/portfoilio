@@ -2,7 +2,6 @@
   background-color: white;
   margin-top: 6rem;
   padding-top: 2rem;
-  /* padding-bottom: 6rem; */
 }
 
 .contact h1 {
@@ -15,12 +14,10 @@
   margin: 0 auto;
   color: white;
   padding: 2rem;
-  width: 75%;
   border-radius: 10px;
   background-color: #000049;
   border: 1px solid #000;
   display: flex;
-  gap: 3.6rem;
   justify-content: space-evenly;
 }
 
@@ -39,16 +36,18 @@
 }
 
 .form {
+  /* width: 100%; */
   background-color: white;
   color: black;
-  display: flex;
+  display: grid;
   gap: 1rem;
-  flex-direction: column;
+  grid-template-columns: 1fr;
+  /* flex-direction: column; */
   margin-right: 1rem;
 }
 
 .formdata {
-  width: 400px;
+  width: 20rem;
   border-radius: 10px;
   background-color: white;
   padding: 1rem;
@@ -57,4 +56,46 @@
 .footer {
   margin-top: 10rem;
   margin-bottom: 0;
+  /* padding-bottom: 0; */
+}
+
+.fix {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1030px) {
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .formcontent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  .flex {
+    width: 75%;
+    gap: 2.4rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .formdata {
+    margin: 0 auto;
+  }
+  .content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .icon {
+    /* margin: 0 auto; */
+    /* justify-content: space-between; */
+  }
 }
